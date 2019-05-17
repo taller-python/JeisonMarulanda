@@ -11,7 +11,7 @@ SUMA = open('SUMA.txt', 'w')
 for num1, num2 in SH.iter_rows(min_row=2):
     try:
         resultado = int(num1.value+num2.value)
-    except:
+    except (RuntimeError, TypeError, NameError):
         resultado = 'Error'
     SUMA.write(str(resultado)+"\n")
 SUMA.close()
@@ -23,7 +23,7 @@ RESTA = open('RESTA.txt', 'w')
 for num1, num2 in SH.iter_rows(min_row=2):
     try:
         resultado = int(num1.value-num2.value)
-    except:
+    except (RuntimeError, TypeError, NameError):
         resultado = 'Error'
     RESTA.write(str(resultado)+"\n")
 RESTA.close()
@@ -35,7 +35,7 @@ MULTI = open('MULTIPLICACION.txt', 'w')
 for num1, num2 in SH.iter_rows(min_row=2):
     try:
         resultado = int(num1.value*num2.value)
-    except:
+    except (RuntimeError, TypeError, NameError):
         resultado = 'Error'
     MULTI.write(str(resultado)+"\n")
 MULTI.close()
@@ -47,7 +47,7 @@ DIVI = open('DIVISION.txt', 'w')
 for num1, num2 in SH.iter_rows(min_row=2):
     try:
         resultado = int(num1.value/num2.value)
-    except:
+    except (RuntimeError, TypeError, NameError):
         resultado = 'Error'
     DIVI.write(str(resultado)+"\n")
 DIVI.close()
