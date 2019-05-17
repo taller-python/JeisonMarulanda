@@ -1,3 +1,4 @@
+"""Taller python"""
 from openpyxl import load_workbook
 
 FILE_PATH = 'operaciones.xlsx'

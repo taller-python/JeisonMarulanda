@@ -1,4 +1,6 @@
+"""Taller python"""
 def palindromo(palabra):
+    """Funcion palindromo"""
     palabra1 = palabra.lower().replace(" ", "")
     palabra2 = ""
     total = len(palabra1)
